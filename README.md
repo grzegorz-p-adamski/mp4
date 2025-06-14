@@ -29,8 +29,59 @@ The script checks for these and gives install hints if missing.
 ## Usage
 
 ```bash
-./video-compress.sh -i <input> [options]
+./mp4.sh -i <input> [options]
 ```
+
+
+Or, to run from anywhere, **add the script to your `PATH`**:
+
+
+
+#### 1. Make the script executable:
+
+```bash
+chmod +x mp4.sh
+```
+
+
+
+#### 2. Move it to a directory in your `PATH` (e.g., `/usr/local/bin` or `~/bin`):
+
+```bash
+mv mp4.sh /usr/local/bin/mp4.sh
+```
+
+**Or**, if you want to use it without the `.sh` extension:
+
+```bash
+mv mp4.sh /usr/local/bin/mp4
+```
+
+
+
+#### 3. Now you can run it from anywhere:
+
+```bash
+mp4.sh -i <input> [options]
+```
+
+or
+
+```bash
+mp4 -i <input> [options]
+```
+
+
+
+> 💡 **Tip:** If you use `~/bin` and it’s not in your `PATH`, add this to your `~/.bashrc` or `~/.zshrc`:
+
+```bash
+export PATH="$HOME/bin:$PATH"
+```
+
+
+
+
 
 ### Arguments
 
